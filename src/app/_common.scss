@@ -1,7 +1,35 @@
-.section-container{
+$backgroundColor: rgba(160, 225, 242, 0.5);
+$fontColor: #ddfff8;
+$imagePath:'/images';
+
+.section-body{
     padding-top: 20px;
     border: 1px solid red;    
     padding-top:4.5rem;
     margin-top:-4.5rem;
     min-height: 100vh;
+}
+
+
+@mixin dataContainer{
+    color: $fontColor;
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content: '';
+        background-image: url('#{$imagePath}/title-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        opacity: 0.5
+    }
+    >*{
+        position: relative;
+    }
 }

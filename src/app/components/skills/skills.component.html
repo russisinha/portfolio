@@ -1,7 +1,33 @@
-<div class="row section-container">
-  <div class="col">
-    <p>
-      skills works! {{skills | json}}
-    </p>
+
+
+
+<div class="section-body row justify-content-center align-items-center">
+  <div class="contentHolder container">
+    <div class="row ">
+      <div class="col-12 flex-wrap d-flex primarySet">
+        <div class="m-2 items-skills text-center" *ngFor="let item of skills">
+          <div>{{item.name}}</div>
+          <div>{{item.score}}</div>
+          <div>{{item.logo}}jhvjhvjwhdcjvwh dcwjbhdbckjwdbcnwbjk</div>
+        </div>
+      </div>
+      <div class="col-12">
+        <hr>
+      </div>
+      <div class="col-12 flex-wrap d-flex primarySet">
+          <div class="m-2 items-skills" *ngFor="let item of skills">
+            <div>{{item.name}}</div>
+            <div>{{item.score}}</div>
+            <div>{{item.logo}}jv,nbm,b,nkbmn</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <hr>
+        </div>
+    </div>
   </div>
+  
 </div>
+
+
+<!--  -->

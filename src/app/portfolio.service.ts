@@ -8,10 +8,11 @@ export class PortfolioService {
   constructor() { console.log('this is service constructor')}
   
   skillSet = [
-    { name: 'HTML5', score: 4, logo: 'img-1' },
-    { name: 'JavaScript', score: 4, logo: 'img-2' },
-    { name: 'CSS3', score: 4, logo: 'img-3' },
-    { name: 'Angular', score: 4, logo: 'img-4' },
+    { name: 'HTML5', score: 4, logo: 'html.png' },
+    { name: 'JavaScript', score: 4, logo: 'javascript.png' },
+    { name: 'CSS3', score: 4, logo: 'css.png' },
+    { name: 'Angular', score: 4, logo: 'angular.png' },
+    
   ]
   
   projectList = [

@@ -1,2 +1,33 @@
 @import '../../common';
 
+.contentHolder{
+    @include dataContainer();
+    padding: 1rem;
+    border-radius:10px;
+    border: 1px solid #ddfff8;
+    
+    .primarySet{
+        justify-content: center;
+        align-content: center;
+    }
+    .items-skills{
+        border: 1px solid red;
+        overflow: hidden;
+        position: relative;
+        background: radial-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+        flex: 1;
+        .logo{
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            //background-image: url('#{$imagePath}/bg_red.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    
+    hr{
+        border-color: rgb(9, 230, 255);
+    }
+}
