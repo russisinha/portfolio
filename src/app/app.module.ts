@@ -8,6 +8,7 @@ import { PortfolioService } from './portfolio.service';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { PrimaryFilterPipe } from './pipes/primaryFilter';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    PrimaryFilterPipe
   ],
   imports: [
     BrowserModule, FormsModule

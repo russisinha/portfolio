@@ -12,5 +12,6 @@ export class Skill{
     name: string;
     score: number;
     logo: string;
+    primary: boolean;
 }
 

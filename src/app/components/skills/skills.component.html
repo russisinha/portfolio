@@ -5,25 +5,22 @@
   <div class="contentHolder container">
     <div class="row ">
       <div class="col-12 flex-wrap d-flex primarySet">
-        <div class="m-2 items-skills text-center" *ngFor="let item of skills">
-          <div>{{item.name}}</div>
-          <div>{{item.score}}</div>
-          <div>{{item.logo}}jhvjhvjwhdcjvwh dcwjbhdbckjwdbcnwbjk</div>
+        <div class="m-2 items-skills text-center" *ngFor="let item of skills | primaryFilter:true">
+          <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
+            <div class="name">{{item.name}}</div>
+          </div>
         </div>
       </div>
       <div class="col-12">
         <hr>
       </div>
-      <div class="col-12 flex-wrap d-flex primarySet">
-          <div class="m-2 items-skills" *ngFor="let item of skills">
-            <div>{{item.name}}</div>
-            <div>{{item.score}}</div>
-            <div>{{item.logo}}jv,nbm,b,nkbmn</div>
+      <div class="col-12 flex-wrap d-flex secondarySet">
+        <div class="m-2 items-skills text-center" *ngFor="let item of skills | primaryFilter:false">
+          <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
+            <div class="name">{{item.name}}</div>
           </div>
         </div>
-        <div class="col-12">
-          <hr>
-        </div>
+      </div>
     </div>
   </div>
   
