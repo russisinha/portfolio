@@ -10,7 +10,7 @@ import { AppConstants } from '../../common';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  tess:string
+  statusMessage:string = "Loading...";
   imagePath: string;
   constructor(public portfolioService: PortfolioService) {
     console.log('constructor')
@@ -20,13 +20,15 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
     this.imagePath = AppConstants.SKILLS_IMAGE_PATH + '/';
     console.log('ngInit')
-    this.getSkillSet()
+    setTimeout(() => {
+      this.getSkillSet()
+    }, 1000); 
   }
   
-  private skills: Skill[]=[]
+  private skills
   
   getSkillSet(){
-    this.portfolioService.getSkills().subscribe((data: Skill[])=>{data.forEach((val)=>this.skills.push(val))})
+    this.skills=this.portfolioService.getSkills()
   }
   
   ngOnChanges(changes: SimpleChanges){
