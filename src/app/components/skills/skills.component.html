@@ -1,23 +1,27 @@
 
-
-
-<div class="section-body row justify-content-center align-items-center">
-  <div class="contentHolder container">
-    <div class="row" *ngIf="skills | async as skillset; else nodata">
-      <div class="col-12 flex-wrap d-flex primarySet">
-        <div class="m-2 items-skills text-center" *ngFor="let item of skillset | primaryFilter:true">
-          <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
-            <div class="name">{{item.name}}</div>
+<div class="section-body row align-items-center"> <!-- justify-content-center -->
+  <div class="container">
+    <div class="contentHolder">
+      <div class="row" *ngIf="skills | async as skillset; else nodata">
+        <div class="col">
+          <div class="row primarySet">
+            <div class="m-2 items-skills text-center" *ngFor="let item of skillset | skillsFilter:true">
+              <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
+                <div class="name">{{item.name}}</div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-12">
-        <hr>
-      </div>
-      <div class="col-12 flex-wrap d-flex secondarySet">
-        <div class="m-2 items-skills text-center" *ngFor="let item of skillset | primaryFilter:false">
-          <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
-            <div class="name">{{item.name}}</div>
+          <div class="row">
+            <div class="col">
+              <hr>
+            </div>
+          </div>
+          <div class="row secondarySet">
+            <div class="m-2 items-skills text-center" *ngFor="let item of skillset | skillsFilter:false">
+              <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
+                <div class="name">{{item.name}}</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -30,6 +34,3 @@
   </div>
   
 </div>
-
-
-<!--  -->

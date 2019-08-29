@@ -1,9 +1,10 @@
 export class Project{
     companyName: string;
-    position?: string;
+    position: string;
     description?: string;
-    startYear?: number;
-    endYear?: number;
+    responsibilities: string;
+    startYear: string;
+    endYear: string;
     logo: string
 }
 

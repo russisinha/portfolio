@@ -1,4 +1,4 @@
-import { Component, OnInit, SimpleChanges} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Observable } from 'rxjs';
 import { PortfolioService } from '../../portfolio.service';
 import { Skill } from '../../entites';
@@ -10,29 +10,22 @@ import { AppConstants } from '../../common';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  statusMessage:string = "Loading...";
-  imagePath: string;
+  private statusMessage:string = "Loading...";
+  private imagePath: string;
+  private skills: Observable<Skill[]>;
+  
   constructor(public portfolioService: PortfolioService) {
     console.log('constructor')
-    
+    this.imagePath = AppConstants.SKILLS_IMAGE_PATH + '/';
   }
   
   ngOnInit() {
-    this.imagePath = AppConstants.SKILLS_IMAGE_PATH + '/';
     console.log('ngInit')
-    setTimeout(() => {
-      this.getSkillSet()
-    }, 1000); 
+    this.getSkillSet()
   }
-  
-  private skills
   
   getSkillSet(){
     this.skills=this.portfolioService.getSkills()
-  }
-  
-  ngOnChanges(changes: SimpleChanges){
-    console.log(changes)
   }
   
 }

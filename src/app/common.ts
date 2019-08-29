@@ -5,4 +5,7 @@ export class AppConstants{
     static get SKILLS_IMAGE_PATH(){
         return `${this.IMAGE_PATH}/skills`;
     }
+    static get PROJECTS_IMAGE_PATH(){
+        return `${this.IMAGE_PATH}/projects`;
+    }
 }
