@@ -2,31 +2,42 @@
 <div class="section-body row align-items-center"> <!-- justify-content-center -->
   <div class="container">
     <div class="contentHolder">
-      <div class="row" *ngIf="projects && projects.length > 0; else nodata">
+      <div class="row" *ngIf="workExpList && workExpList.length > 0; else nodata">
         <div class="col">
           <div class="row primarySet flex-column">
-            <div class="col items-projects my-4" *ngFor="let item of projects">
-              <div class="row d-flex flex-column flex-md-row align-items-md-end align-items-center mb-3">
+            <div class="col items-workExpList my-4" *ngFor="let company of workExpList">
+              <div class="row flex-column flex-md-row align-items-md-end align-items-center mb-3">
                 <div class="logo mx-auto mx-md-3 mb-2 mb-md-0"> <!-- [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}" -->
-                  <img [src]="imagePath+item.logo" class="img-fluid">
+                  <img [src]="imagePath+company.logo" class="img-fluid">
                 </div>
-                <div class="col project_info text-md-left text-center">
-                  <div class="position">{{item.position}}</div>
-                  <div class="companyName">{{item.companyName}}</div>
+                <div class="col position_info text-md-left text-center">
+                  <div class="position">{{company.position}}</div>
+                  <div class="companyName">{{company.companyName}}</div>
                   <div class="duration">
-                    <span class="startYear">{{item.startYear | projectDate }}</span> - <span class="endYear">{{item.endYear | projectDate }}</span>
+                    <span class="startYear">{{company.startYear | projectDate }}</span> - <span class="endYear">{{company.endYear | projectDate }}</span>
                   </div>
-                  
                 </div>
               </div>
-              <div class="row company_info mb-3" *ngIf="item.description">
-                <!-- <div class="col-12 title">About the company</div> -->
-                <div class="col-12 description">{{item.description}}jkgvkjvgvjkvh</div>
+              <div class="row company_info mb-3" *ngIf="company.description">
+                <div class="col-12 title">About the company</div>
+                <div class="col-12 description">{{company.description}}jkgvkjvgvjkvh</div>
               </div>
-              <div class="row project_detail mb-3" *ngIf="item.responsibilities">
-                <div class="col-12 title">Roles and responsibilities:</div>
-                <div class="col-12 responsibilities">{{item.responsibilities}}jkgvkjvgvjkvh</div>
+              <div class="row flex-column project_info" *ngIf="company.projects">
+                <div class="col" *ngFor="let project of company.projects">
+                  <div class="row project_title mb-3" *ngIf="project.title">
+                      <div class="col-12 title"><span>Title:</span> {{ project.title }} </div>
+                  </div>
+                  <div class="row project_description mb-3" *ngIf="project.responsibilities">
+                    <div class="col-12 title text-md-left text-center">Roles and responsibilities:</div>
+                    <div class="col-12 responsibilities">
+                      <ul>
+                        <li *ngFor="let item of project.responsibilities">{{ item }}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
+              
             </div>
             
           </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Project, Skill } from '../../entites';
+import { WorkExp, Skill } from '../../entites';
 import { PortfolioService } from '../../portfolio.service';
 import { Observable } from 'rxjs';
 import { AppConstants } from '../../common';
@@ -12,7 +12,7 @@ import { AppConstants } from '../../common';
 export class ProjectsComponent implements OnInit {
   private statusMessage:string = "Loading...";
   private imagePath: string;
-  private projects: Project[];
+  private workExpList: WorkExp[];
   
   constructor(public portfolioService: PortfolioService) {
     this.imagePath = AppConstants.PROJECTS_IMAGE_PATH + '/';
@@ -20,14 +20,14 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     // setTimeout(() => {
-      this.getProjectList()
+      this.getWorkExpList()
     // }, 2000);
   }
 
-  getProjectList(){
-    this.portfolioService.getProjectList().subscribe((data: Project[])=>{
-      this.projects=data
-      if(this.projects.length == 0){
+  getWorkExpList(){
+    this.portfolioService.getWorkExpList().subscribe((data: WorkExp[])=>{
+      this.workExpList=data
+      if(this.workExpList.length == 0){
         this.statusMessage = "No Data"
       }
     })

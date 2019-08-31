@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill, Project } from './entites';
+import { Skill, WorkExp } from './entites';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/operators/map';
 
@@ -11,17 +11,7 @@ export class PortfolioService {
   
   skillSet: Skill[];
   
-  projectList = [
-    { companyName: 'Prowareness', position: 'Technical Developer', description: '', 
-    responsibilities: 
-    '- Worked as part of an AGILE team in building an online portal a mobile network service provider based in Netherlands.<br>'+
-    '- Involved in backend development using JAVA and JDBC as well as frontend development using AngularJS, HTML, CSS, JavaScript, jQuery, Bootstrap.'+
-    '- Regular interactions with product owners in understanding the requirements of new features to be added.'+
-    '- Implementing new features of the application and testing it end to end and create a test report for the same.',
-    startYear: '3/1/2017', endYear: '8/14/2017', logo: 'prowareness.png' },
-    { companyName: 'Tallenge', position: 'Software Developer', description: '', responsibilities: 'role and responsibilities', startYear: '12/1/2012', endYear: '2/28/2017', logo: 'tallenge2.png' },
-    { companyName: 'Timken Engineering and Research - India Private Limited', position: 'Project Trainee - Web Developer', description: '', responsibilities: 'role and responsibilities', startYear: '6/1/2012', endYear: '11/30/2012', logo: 'timken.png' }
-  ]
+  projectList: WorkExp[];
   
   getSkills(): Observable<Skill[]>{
     return <Observable<Skill[]>> this._http.get('../data/skills.json')
@@ -31,13 +21,15 @@ export class PortfolioService {
     //   observer.next(this.skillSet);
     // })
   }
-    
+  
+  
+  
+  getWorkExpList(): Observable<WorkExp[]>{
+    return this._http.get<WorkExp[]>('../data/projects.json')
 
-
-  getProjectList(): Observable<Project[]>{
-    return new Observable(observer => {
-      observer.next(this.projectList);
-    })
+    // return new Observable(observer => {
+    //   observer.next(this.projectList);
+    // })
   }
   
   
@@ -72,3 +64,16 @@ export class PortfolioService {
   // }
   
 }
+
+
+// var config = {
+//   headers: {
+//       'Content-Type': 'application/json',
+//       'X-Api-Key': $scope.apiKey
+//   }
+// };
+
+// $http.get(
+//   'https://api.newrelic.com/v2/applications.json',
+//   config
+// )
