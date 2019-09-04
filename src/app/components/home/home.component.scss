@@ -6,11 +6,12 @@
     @include dataContainer();
     h1{
         margin-bottom: 0;
-        font-family: 'Russo One', 'Roboto', sans-serif;
+        font-family: $fortRusso;
         font-size: 5rem
     }
     h2{
         font-weight: 300;
+        font-family: 'Kalam';
     }
     
 }

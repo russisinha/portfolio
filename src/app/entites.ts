@@ -5,13 +5,16 @@ export class WorkExp{
     projects: Projects[];
     startYear: string;
     endYear: string;
-    logo: string
+    logo: string;
+    url: string;
 }
 
 export class Projects{
     title: string;
-    description: string;
+    description: string[];
     responsibilities: string[];
+    repoUrl: string;
+    repoUrlText: string;
 }
 
 export class Skill{

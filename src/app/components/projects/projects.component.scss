@@ -2,20 +2,21 @@
 
 .contentHolder{
     @include dataContainer();
-    padding: 1rem;
+    //padding: 1rem;
     border-radius:10px;
     border: 1px solid #ddfff8;
-    
-    .primarySet{
-        color: $fontColor;
+    font-size: 1rem;
+
+    .workExpSet{
+        color: $primary-color;
         justify-content: center;
         align-content: center;
         .items-workExpList{
             //padding: 1rem;
             line-height: 1.4;
-            font-size: 1.2rem;
+            font-size: 1em;
             .logo{
-                width: 10rem;
+                width: 10em;
                 // height: 10rem;
                 // margin: 1rem;
                 //background-position: center;
@@ -28,9 +29,9 @@
                 //transition: all 0.2s linear;
             }
             .position_info{
+                font-size: 1.3em;
                 .position{
                     font-weight: bold; 
-                    font-size: 1.5em;
                     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
                 }
                 .companyName{
@@ -38,21 +39,22 @@
                 }
                 .duration{
                     font-weight: lighter;
-                    .startYear{
-                    }
-                    .endYear{
-                    }
+                    // .startYear{
+                    // }
+                    // .endYear{
+                    // }
                 }
             }
             .company_info{
+                font-size: 1.1em;
                 .title{
                     text-decoration: underline;
                 }
-                .description{
-                    font-size: 1em;
-                }
+                // .description{
+                // }
             }
             .project_info{
+                font-size: 1.1em;
                 .project_title{
                     .title span{
                         text-decoration: underline;
@@ -60,15 +62,50 @@
                     
                 }
                 .project_description{
+                    font-size: 1em;
                     .title{
                         text-decoration: underline;
                     }
-                    .responsibilities{
-                        font-size: 1em;
-                    }    
+                    // .responsibilities{
+                    // }    
                 }
             }
         }
+        hr{
+            border-color: rgba(9, 230, 255, 0.5);
+        }   
+    }
+
+    .projectsSet{
+        color: $primary-color;
+        justify-content: center;
+        align-content: center;
+        .items-projectsList{
+            //padding: 1rem;
+            line-height: 1.4;
+            font-size: 1em;
+                .project_title{
+                    font-size: 1.2em;
+                    .title span{
+                        text-decoration: underline;
+                    }
+                    
+                }
+                .project_description{
+                    font-size: 1.1em;
+                    .title{
+                        text-decoration: underline;
+                    }
+                    // .description{
+                    // }
+                    .links .btn{
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        hr{
+            border-color: rgba(9, 230, 255, 0.5);
+        }   
     }
     
     

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill, WorkExp } from './entites';
+import { Skill, WorkExp, Projects } from './entites';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/operators/map';
 
@@ -25,7 +25,7 @@ export class PortfolioService {
   
   
   getWorkExpList(): Observable<WorkExp[]>{
-    return this._http.get<WorkExp[]>('../data/projects.json')
+    return this._http.get<WorkExp[]>('../data/workExp.json')
 
     // return new Observable(observer => {
     //   observer.next(this.projectList);
@@ -33,6 +33,13 @@ export class PortfolioService {
   }
   
   
+  getProjectsList(): Observable<Projects[]>{
+    return this._http.get<Projects[]>('../data/projects.json')
+
+    // return new Observable(observer => {
+    //   observer.next(this.projectList);
+    // })
+  }
   
   
   // getNum(){

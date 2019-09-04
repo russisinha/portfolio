@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 $backgroundColor: rgba(160, 225, 242, 0.5);
-$fontColor: #ddfff8;
+$primary-color: #fffcf9;
 $imagePath:'/images';
+$fortRusso: 'Russo One', 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap');
 
 .section-body{
     padding-top: 20px;
@@ -8,16 +12,24 @@ $imagePath:'/images';
     padding-top:4.5rem;
     margin-top:-4.5rem;
     min-height: 100vh;
+    .section-title{
+        color: $primary-color;
+        font-size: 4rem;
+        line-height: 1;
+        font-family: 'Averia Serif Libre';
+        //background: linear-gradient(transparent 0%, rgba(115, 229, 255, 0.5) 45%, rgba(115, 229, 255, 0.5) 55%, transparent 100%);
+        text-shadow: 4px 4px 5px rgba(108, 235, 235, 0.8);
+    }
 }
 
 
 @mixin dataContainer{
-    color: $fontColor;
+    color: $primary-color;
     overflow: hidden;
     position: relative;
     &::before{
         content: '';
-        background-image: url('#{$imagePath}/title-bg.jpg');
+        background-image: url('#{$imagePath}/bg4.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -27,7 +39,7 @@ $imagePath:'/images';
         left:0;
         bottom:0;
         right:0;
-        opacity: 0.5
+        //opacity: 0.5
     }
     >*{
         position: relative;

@@ -1,13 +1,18 @@
 
-<div class="section-body row align-items-center"> <!-- justify-content-center -->
+<div class="section-body row"> <!-- justify-content-center / align-items-center -->
   <div class="container">
-    <div class="contentHolder">
+    <div class="contentHolder p-3 mt-md-3 mt-3 mb-md-5 mb-4">
+      <div class="row mb-3 mt-1 section-title justify-content-center">
+            My Skills
+      </div>
       <div class="row" *ngIf="skills | async as skillset; else nodata">
         <div class="col">
-          <div class="row primarySet">
-            <div class="m-2 items-skills text-center" *ngFor="let item of skillset | skillsFilter:true">
-              <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
-                <div class="name">{{item.name}}</div>
+          <div class="row justify-content-center">
+            <div class="primarySet d-flex">
+              <div class="items-skills text-center" *ngFor="let item of skillset | skillsFilter:true">
+                <div class="logo" [ngStyle]="{'background-image':'url('+imagePath+item.logo+')'}">
+                  <div class="name">{{item.name}}</div>
+                </div>
               </div>
             </div>
           </div>

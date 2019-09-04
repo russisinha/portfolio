@@ -11,6 +11,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SkillsFilterPipe } from './pipes/skillsFilter.pipe';
 import { ProjectDatePipe } from './pipes/projectDate.pipe';
+//import { UrlMergePipe } from './pipes/urlMerge.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectDatePipe } from './pipes/projectDate.pipe';
     ProjectsComponent,
     ContactComponent,
     SkillsFilterPipe,
-    ProjectDatePipe
+    ProjectDatePipe,
+    //UrlMergePipe
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
