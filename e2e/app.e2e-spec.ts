@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('portfolio-ng4 App', () => {
+describe('portfolio App', () => {
   let page: AppPage;
 
   beforeEach(() => {
