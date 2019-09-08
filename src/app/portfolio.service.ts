@@ -1,20 +1,22 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Skill, WorkExp, Projects } from './entites';
-import { HttpClient } from '@angular/common/http';
-import 'rxjs/operators/map';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PortfolioService {
   
-  constructor(private _http: HttpClient) { console.log('this is service constructor')}
+  constructor(private _http: Http) { console.log('this is service constructor')}
   
   skillSet: Skill[];
   
   projectList: WorkExp[];
   
-  getSkills(): Observable<Skill[]>{
-    return <Observable<Skill[]>> this._http.get('../data/skills.json')
+  getSkills(){
+    return this._http.get('../data/skills.json')
+    .map(response => response.json())
+
     //.map((response: Response) => <Skill[]>response.json());
     
     // return new Observable(observer => {
@@ -25,7 +27,8 @@ export class PortfolioService {
   
   
   getWorkExpList(): Observable<WorkExp[]>{
-    return this._http.get<WorkExp[]>('../data/workExp.json')
+    return this._http.get('../data/workExp.json')
+    .map(response => response.json())
 
     // return new Observable(observer => {
     //   observer.next(this.projectList);
@@ -34,7 +37,8 @@ export class PortfolioService {
   
   
   getProjectsList(): Observable<Projects[]>{
-    return this._http.get<Projects[]>('../data/projects.json')
+    return this._http.get('../data/projects.json')
+    .map(response => response.json())
 
     // return new Observable(observer => {
     //   observer.next(this.projectList);
