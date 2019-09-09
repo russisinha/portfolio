@@ -14,7 +14,7 @@ export class PortfolioService {
   projectList: WorkExp[];
   
   getSkills(){
-    return this._http.get('../data/skills.json')
+    return this._http.get('data/skills.json')
     .map(response => response.json())
 
     //.map((response: Response) => <Skill[]>response.json());
@@ -27,7 +27,7 @@ export class PortfolioService {
   
   
   getWorkExpList(): Observable<WorkExp[]>{
-    return this._http.get('../data/workExp.json')
+    return this._http.get('data/workExp.json')
     .map(response => response.json())
 
     // return new Observable(observer => {
@@ -37,7 +37,7 @@ export class PortfolioService {
   
   
   getProjectsList(): Observable<Projects[]>{
-    return this._http.get('../data/projects.json')
+    return this._http.get('data/projects.json')
     .map(response => response.json())
 
     // return new Observable(observer => {
