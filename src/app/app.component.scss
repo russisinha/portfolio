@@ -211,13 +211,8 @@ $bg: desaturate(darken($primary-color, 30%), 70%);
             right:0;
             transition: menu-transition(filter);
         }
-        transition: menu-transition(filter);
-
         &.bodyBlur{
-            &:before{
-                filter: blur(5px);
-            }
-            filter: blur(10px);
+            filter: blur(15px);
         }
     }
     
