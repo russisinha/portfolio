@@ -1,0 +1,59 @@
+[
+    { 
+        "companyName": "Prowareness", 
+        "position": "Technical Developer", 
+        "description": "", 
+        "projects": [
+            {
+                "title": "",
+                "responsibilities": [
+                    "Worked as part of an AGILE team build an online portal for a mobile network service provider based in Netherlands.",
+                    "Involved in frontend development using AngularJS, HTML, CSS, JavaScript, jQuery, Bootstrap.",
+                    "Regular interactions with product owners in understanding the requirements of new features to be added.",
+                    "Implementing new features of the application and testing it end to end and create a test report for the same."
+                ]
+            }
+        ],
+        "startYear": "3/1/2017", 
+        "endYear": "8/14/2017", 
+        "logo": "prowareness.png" 
+    },
+    { 
+        "companyName": "Tallenge", 
+        "position": "Software Developer", 
+        "description": "", 
+        "projects": [
+            {
+                "title": "",
+                "responsibilities": [
+                    "Manage and guide a team to build complete UI for a global online talent platform on a .NET framework with MVC architecture using C# in the backend and HTML, CSS, JavaScript, Ajax, jQuery, Bootstrap for the UI.",
+                    "Programming of key features in the application like logging in through social media (Facebook, Twitter and Google+) using OAuth 2.0.",
+                    "Enhancements to the website/adding new features and maintenance of the same.",
+                    "Occasional changes to the database schema and changes in stored procedures if required.",
+                    "Built a hybrid mobile app for the online talent platform using Apache Cordova.",
+                    "Worked on UI enhancement/addition of new features in an online retail store, using Shopify, which displays a large variety of photographs and paintings by old and new artists."
+                ]
+            }
+        ],
+        "startYear": "12/1/2012", 
+        "endYear": "2/28/2017", 
+        "logo": "tallenge2.png" 
+    },
+    { 
+        "companyName": "Timken Engineering and Research - India Private Limited", 
+        "position": "Project Trainee - Web Developer", 
+        "description": "", 
+        "projects": [
+            {
+                "title": "",
+                "responsibilities": [
+                    "Built an web application issue tracking website from scratch, using multi-layered architecture, for use among its employees on a .NET framework using VB.NET.",
+                    "Design and implement the database design and their relations."
+                ]
+            }
+        ],
+        "startYear": "6/1/2012", 
+        "endYear": "11/30/2012", 
+        "logo": "timken.png" 
+    }
+]
