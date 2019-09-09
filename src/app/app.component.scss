@@ -202,6 +202,7 @@ $bg: desaturate(darken($primary-color, 30%), 70%);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        transform: translate3d(0,0,0);
         transition: menu-transition(filter);
         &.bodyBlur{
             filter: blur(15px);

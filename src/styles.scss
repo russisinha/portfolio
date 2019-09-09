@@ -4,13 +4,20 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
 
-
-@include media-breakpoint-down(lg) {  }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
     html{
         font-size: 14px;
     }
 }
-@include media-breakpoint-down(sm) {  }
+@include media-breakpoint-down(md) {
+    html{
+        font-size: 13px;
+    }
+}
+@include media-breakpoint-down(sm) {
+    html{
+        font-size: 12px;
+    }
+}
 @include media-breakpoint-down(xs) {  }
 
