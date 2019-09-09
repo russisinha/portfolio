@@ -7,11 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //@ViewChild('pageInfo') private pageInfo: ElementRef; 
+  title = 'portfolio';
+  showHeaderMenu: boolean = false;
   
   goToSection(elm){
-    console.log(elm)
+    //console.log(elm)
+    this.toggleHeaderMenu()
     elm.scrollIntoView({behavior: "smooth"})
   }
-  title = 'portfolio';
   
+  toggleHeaderMenu(){
+    this.showHeaderMenu=!this.showHeaderMenu
+  }
+
 }

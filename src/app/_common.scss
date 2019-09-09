@@ -11,47 +11,63 @@ $imagePath:'/images';
 $fortRusso: 'Russo One', 'Roboto', sans-serif;
 $partitionColor: darken($primary-color, 10%);
 
+
+@include media-breakpoint-down(xs) {  }
+@include media-breakpoint-down(sm) {
+    html{
+        font-size: 12px;
+    } 
+}
+@include media-breakpoint-down(md) {  }
+@include media-breakpoint-down(lg) {  }
+
 .section-body{
-    padding-top: 20px;
-    border: 1px solid red;
-    @include media-breakpoint-down(sm) { 
-        padding-top:4.5rem;
-        margin-top:-4.5rem;
+    //padding-top: 20px;
+    //padding-top:4.5rem;
+    //border: 1px solid red;
+    // @include media-breakpoint-down(sm) { 
+        //     padding-top:4.5rem;
+        //     margin-top:-4.5rem;
+        // }
+        
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        .section-title{
+            color: $primary-color;
+            font-size: 4rem;
+            line-height: 1;
+            font-family: 'Averia Serif Libre';
+            //background: linear-gradient(transparent 0%, rgba(115, 229, 255, 0.5) 45%, rgba(115, 229, 255, 0.5) 55%, transparent 100%);
+            text-shadow: 4px 4px 5px darken($primary-color, 90%);
+        }
     }
     
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    .section-title{
+    
+    @mixin dataContainer{
         color: $primary-color;
-        font-size: 4rem;
-        line-height: 1;
-        font-family: 'Averia Serif Libre';
-        //background: linear-gradient(transparent 0%, rgba(115, 229, 255, 0.5) 45%, rgba(115, 229, 255, 0.5) 55%, transparent 100%);
-        text-shadow: 4px 4px 5px darken($primary-color, 90%);
-    }
-}
-
-
-@mixin dataContainer{
-    color: $primary-color;
-    overflow: hidden;
-    position: relative;
-    &::before{
-        content: '';
-        background-image: url('#{$imagePath}/bg4.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        position: absolute;
-        top:0;
-        left:0;
-        bottom:0;
-        right:0;
-        //opacity: 0.5
-    }
-    >*{
+        overflow: hidden;
         position: relative;
+        padding: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        box-shadow: 0px 0px 20px black;
+        
+        &::before{
+            content: '';
+            background-image: url('#{$imagePath}/bg4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            //opacity: 0.5
+        }
+        >*{
+            position: relative;
+        }
     }
-}

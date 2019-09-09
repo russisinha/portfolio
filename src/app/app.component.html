@@ -1,36 +1,38 @@
 
 <div class="container-fluid pageContent">
     
-    <header class="navbar navbar-expand navbar-dark fixed-top"> <!-- fixed-top -->
-        <a class="navbar-brand pt-0 pb-0">
-            <div class="logo text-dark">
-                <div>RS</div>
-            </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <header class="fixed-top" [class.headerBgHide]="showHeaderMenu"> <!-- navbar navbar-expand navbar-dark fixed-top-->
         
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto"> <!-- mt-2 mt-lg-0 -->
-                <li class="nav-item">
-                    <a class="nav-link" (click)="goToSection(home)">Home</a>
+        <div class="logo ml-4 my-2 pull-left">
+            RS
+        </div>
+        
+        <div class="headerMenu mr-4 my-2 pull-right" [class.displayMenu]="showHeaderMenu">
+            <div class="btnMenu" (click)="toggleHeaderMenu()">
+                <div class="stroke"></div>
+            </div>
+            <div *ngIf="showHeaderMenu" class="mobileMenuOverlay d-md-none d-block"></div>
+            <ul class=""> <!-- mt-2 mt-lg-0 -->
+                <li class="">
+                    <a class="" (click)="goToSection(home)">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" (click)="goToSection(skills)">Skills</a>
+                <li class="">
+                    <a class="" (click)="goToSection(skills)">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" (click)="goToSection(projects)">Projects</a>
+                <li class="">
+                    <a class="" (click)="goToSection(projects)">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" (click)="goToSection(contact)">Contact Me</a>
-                </li>
+                <!-- <li class="">
+                    <a class="" (click)="goToSection(contact)">Contact Me</a>
+                </li> -->
                 
             </ul>
+            
         </div>
+
     </header>
     
-    <main>
+    <main class="row flex-column" [class.bodyBlur]="showHeaderMenu">
         <section #home>
             <app-home></app-home>
         </section>
@@ -45,37 +47,37 @@
         </section> -->
     </main>
     
-    <footer class="navbar navbar-expand text-light row flex-md-row flex-column">
+    <footer class="flex-md-row flex-column fixed-bottom" [class.showFooter]="showHeaderMenu">
         <div class="ml-md-auto mb-2 mb-md-0 txt">
-                Connect with me:
+            Connect with me:
         </div>
-        <ul class="navbar-nav mr-md-auto align-items-center"> <!-- mt-2 mt-lg-0 -->
-            <li class="nav-item px-3 px-md-4">
+        <ul class="mr-md-auto align-items-center"> <!-- mt-2 mt-lg-0 -->
+            <li class="px-3 px-md-4">
                 <a href="tel:+13125226552" class="text-light">
                     <i class="fa fa-phone-square"></i>
                 </a>
             </li>
-            <li class="nav-item px-3 px-md-4">
+            <li class="px-3 px-md-4">
                 <a href="mailto:russi.sinha@gmail.com" class="text-light">
                     <i class="fa fa-envelope"></i>
                 </a>
             </li>
-            <li class="nav-item px-3 px-md-4">
+            <li class="px-3 px-md-4">
                 <a href="https://github.com/russisinha" target="_blank" class="text-light">
                     <i class="fa fa-github"></i>
                 </a>
             </li>
-            <li class="nav-item px-3 px-md-4">
-                <a target="_blank" class="text-light">
+            <li class="px-3 px-md-4">
+                <a href="https://www.instagram.com/russisinha/" target="_blank" class="text-light">
                     <i class="fa fa-instagram"></i>
                 </a>
             </li>
-            <li class="nav-item px-3 px-md-4">
+            <li class="px-3 px-md-4">
                 <a target="_blank" class="text-light">
                     <i class="fa fa-facebook-square"></i>
                 </a>
             </li>
-            <li class="nav-item px-3 px-md-4">
+            <li class="px-3 px-md-4">
                 <a href="https://www.linkedin.com/in/russi-sinha/" target="_blank" class="text-light">
                     <i class="fa fa-linkedin-square"></i>
                 </a>
