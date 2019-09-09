@@ -197,19 +197,12 @@ $bg: desaturate(darken($primary-color, 30%), 70%);
     
     
     main{
-        &:before{
-            content: '';
-            background-image: url('#{$imagePath}/bg2.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
+        content: '';
+        background: url('#{$imagePath}/bg2.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         transition: menu-transition(filter);
         &.bodyBlur{
             filter: blur(15px);
