@@ -1,6 +1,6 @@
 export class AppConstants{
     static get IMAGE_PATH(){
-        return "/assets/images";
+        return "./assets/images";
     }
     static get SKILLS_IMAGE_PATH(){
         return `${this.IMAGE_PATH}/skills`;
