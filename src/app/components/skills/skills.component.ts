@@ -12,7 +12,7 @@ import { AppConstants } from '../../common';
 export class SkillsComponent implements OnInit {
   private statusMessage:string = "Loading...";
   private imagePath: string;
-  private skills: Observable<Skill[]>;
+  skills: Observable<Skill[]>;
   
   constructor(public portfolioService: PortfolioService) {
     console.log('constructor')

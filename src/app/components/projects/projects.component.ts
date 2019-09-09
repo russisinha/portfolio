@@ -13,8 +13,8 @@ export class ProjectsComponent implements OnInit {
   private workExpStatusMessage:string = "Loading...";
   private projectsStatusMessage:string = "Loading...";
   private imagePath: string;
-  private workExpList: WorkExp[];
-  private projectsList: Projects[];
+  workExpList: WorkExp[];
+  projectsList: Projects[];
   
   constructor(public portfolioService: PortfolioService) {
     this.imagePath = AppConstants.PROJECTS_IMAGE_PATH + '/';
