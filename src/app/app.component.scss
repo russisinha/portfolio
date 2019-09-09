@@ -205,14 +205,19 @@ $bg: desaturate(darken($primary-color, 30%), 70%);
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            //position: fixed;
+            position: fixed;
             top:0;
             left:0;
             right:0;
+            transition: menu-transition(filter);
         }
         transition: menu-transition(filter);
+
         &.bodyBlur{
-            filter: blur(15px);
+            &:before{
+                filter: blur(5px);
+            }
+            filter: blur(10px);
         }
     }
     
