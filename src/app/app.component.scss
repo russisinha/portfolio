@@ -141,7 +141,7 @@ $bg: desaturate(darken($primary-color, 30%), 70%);
                     justify-content: center;
                     align-items: stretch;
                     text-align: center;
-                    transform: translateX(100%);
+                    transform: translateX(150%);
                     transition: menu-transition(transform), menu-transition(opacity);
                     text-transform: uppercase;
                 }
