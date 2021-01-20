@@ -21,6 +21,5 @@
     { "name": "Oracle SQL Developer", "score": 4, "logo": "oraclesqldeveloper.png", "primary": false },
     { "name": "D3", "score": 4, "logo": "d3.png", "primary": false },
     { "name": "Azure", "score": 4, "logo": "azure.png", "primary": false },
-    { "name": "NodeJS", "score": 4, "logo": "nodejs.png", "primary": false },
-    
+    { "name": "NodeJS", "score": 4, "logo": "nodejs.png", "primary": false }
 ]
