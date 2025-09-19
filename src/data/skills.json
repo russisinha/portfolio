@@ -1,6 +1,7 @@
 [
     { "name": "HTML5", "score": 4, "logo": "html.png", "primary": false },
     { "name": "JavaScript", "score": 4, "logo": "javascript.png", "primary": false },
+    { "name": "TypeScript", "score": 4, "logo": "typescript.png", "primary": false },
     { "name": "CSS3", "score": 4, "logo": "css.png", "primary": false },
     { "name": "Angular", "score": 4, "logo": "angular.png", "primary": false },
     { "name": "Bootstrap", "score": 4, "logo": "bootstrap.png", "primary": false },
@@ -21,5 +22,7 @@
     { "name": "Oracle SQL Developer", "score": 4, "logo": "oraclesqldeveloper.png", "primary": false },
     { "name": "D3", "score": 4, "logo": "d3.png", "primary": false },
     { "name": "Azure", "score": 4, "logo": "azure.png", "primary": false },
-    { "name": "NodeJS", "score": 4, "logo": "nodejs.png", "primary": false }
+    { "name": "NodeJS", "score": 4, "logo": "nodejs.png", "primary": false },
+    { "name": "GitLab", "score": 4, "logo": "gitlab.png", "primary": false },
+    { "name": "Jenkins", "score": 4, "logo": "jenkins.png", "primary": false }
 ]

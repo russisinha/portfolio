@@ -1,4 +1,48 @@
 [
+    {
+        "companyName": "Bullhorn",
+        "position": "Software Engineer III",
+        "description": "",
+        "projects": [
+            {
+                "title": "",
+                "responsibilities": [
+                    "Contributed to the design and development of the Time and Expense module of the Applicant Tracking System as part of an Agile team",
+                    "Implemented invoice compression, reducing the file size by an average of 80% which helped reduce email attachment failures",
+                    "Involved in full-stack development using SQL Server, Java, Hibernate, Angular, HTML and CSS, from requirements gathering to production deployment",
+                    "Implemented event-driven microservices using Apache Kafka, optimizing consumer groups and partitions for scalable, fault-tolerant data pipelines",
+                    "Developed and enhanced Angular components including Routing, Directives, and HTTP services for REST API integration",
+                    "Improved product quality and velocity by reducing testing time through the creation of frontend and backend automation test suites",
+                    "Fostered team growth and improved engineering standards through pair programming, mentoring, and collaborative knowledge sharing",
+                    "Collaborated with product owners and peers in Scrum ceremonies and design discussions to refine requirements, resolve impediments, and improve component functionality and system architecture; additionally served as Scrum Master for a quarter, driving measurable improvements in team efficiency"
+                ]
+            }
+        ],
+        "startYear": "7/22/2021",
+        "endYear": null,
+        "logo": "bullhorn.png"
+    },
+    {
+        "companyName": "CVS Health",
+        "position": "Software Developer",
+        "description": "",
+        "projects": [
+            {
+                "title": "",
+                "responsibilities": [
+                    "Working in a team to build the Inventory Management System for CVS Minute Clinic",
+                    "Using barcode reader to scan linear and 2D barcodes on the labels for fetching product information",
+                    "Involved in daily scrum meeting to discuss the progress and modifications, if required and other AGILE activities",
+                    "Development of frontend using Angular 7, Angular Material, Bootstrap 4, FontAwesome, HTML, SCSS, TypeScript",
+                    "Implement components using the design and features required by the product owners",
+                    "Responsible for understanding the requirements, documenting the workflow strategies, participating in peer review in an Agile environment"
+                ]
+            }
+        ],
+        "startYear": "9/19/2019",
+        "endYear": "7/9/2021",
+        "logo": "cvshealth.png"
+    },
     { 
         "companyName": "Prowareness", 
         "position": "Technical Developer", 
@@ -7,10 +51,10 @@
             {
                 "title": "",
                 "responsibilities": [
-                    "Worked as part of an AGILE team build an online portal for a mobile network service provider based in Netherlands.",
-                    "Involved in frontend development using AngularJS, HTML, CSS, JavaScript, jQuery, Bootstrap.",
-                    "Regular interactions with product owners in understanding the requirements of new features to be added.",
-                    "Implementing new features of the application and testing it end to end and create a test report for the same."
+                    "Worked as part of an AGILE team build an online portal for a mobile network service provider based in Netherlands",
+                    "Involved in frontend development using AngularJS, HTML, CSS, JavaScript, jQuery, Bootstrap",
+                    "Regular interactions with product owners in understanding the requirements of new features to be added",
+                    "Implementing new features of the application and testing it end to end and create a test report for the same"
                 ]
             }
         ],
@@ -26,12 +70,12 @@
             {
                 "title": "",
                 "responsibilities": [
-                    "Manage and guide a team to build complete UI for a global online talent platform on a .NET framework with MVC architecture using C# in the backend and HTML, CSS, JavaScript, Ajax, jQuery, Bootstrap for the UI.",
-                    "Programming of key features in the application like logging in through social media (Facebook, Twitter and Google+) using OAuth 2.0.",
-                    "Enhancements to the website/adding new features and maintenance of the same.",
-                    "Occasional changes to the database schema and changes in stored procedures if required.",
-                    "Built a hybrid mobile app for the online talent platform using Apache Cordova.",
-                    "Worked on UI enhancement/addition of new features in an online retail store, using Shopify, which displays a large variety of photographs and paintings by old and new artists."
+                    "Manage and guide a team to build complete UI for a global online talent platform on a .NET framework with MVC architecture using C# in the backend and HTML, CSS, JavaScript, Ajax, jQuery, Bootstrap for the UI",
+                    "Programming of key features in the application like logging in through social media (Facebook, Twitter and Google+) using OAuth 2.0",
+                    "Enhancements to the website/adding new features and maintenance of the same",
+                    "Occasional changes to the database schema and changes in stored procedures if required",
+                    "Built a hybrid mobile app for the online talent platform using Apache Cordova",
+                    "Worked on UI enhancement/addition of new features in an online retail store, using Shopify, which displays a large variety of photographs and paintings by old and new artists"
                 ]
             }
         ],
@@ -47,8 +91,8 @@
             {
                 "title": "",
                 "responsibilities": [
-                    "Built an web application issue tracking website from scratch, using multi-layered architecture, for use among its employees on a .NET framework using VB.NET.",
-                    "Design and implement the database design and their relations."
+                    "Built an web application issue tracking website from scratch, using multi-layered architecture, for use among its employees on a .NET framework using VB.NET",
+                    "Design and implement the database design and their relations"
                 ]
             }
         ],

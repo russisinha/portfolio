@@ -17,13 +17,13 @@
                   <div class="position">{{company.position}}</div>
                   <div class="companyName">{{company.companyName}}</div>
                   <div class="duration">
-                    <span class="startYear">{{company.startYear | projectDate }}</span> - <span class="endYear">{{company.endYear | projectDate }}</span>
+                    <span class="startYear">{{company.startYear | projectDate }}</span> - <span class="endYear" *ngIf="company.endYear">{{company.endYear | projectDate }}</span>
                   </div>
                 </div>
               </div>
               <div class="row company_info mb-3" *ngIf="company.description">
                 <div class="col-12 title">About the company</div>
-                <div class="col-12 description">{{company.description}}jkgvkjvgvjkvh</div>
+                <div class="col-12 description">{{company.description}}</div>
               </div>
               <div class="row flex-column project_info" *ngIf="company.projects">
                 <div class="col" *ngFor="let project of company.projects">
