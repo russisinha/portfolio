@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill, WorkExp, Projects } from './entites';
+import { Skill, WorkExp, Projects } from './entities';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 

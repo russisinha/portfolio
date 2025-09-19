@@ -6,6 +6,6 @@ import { DatePipe } from "@angular/common";
 })
 export class ProjectDatePipe extends DatePipe implements PipeTransform{
     transform(date: string){
-        return super.transform(date, 'MMMM, yyyy');
+        return date? super.transform(date, 'MMMM, yyyy'): 'Present';
     }
 }

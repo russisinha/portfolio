@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Observable } from 'rxjs';
 import { PortfolioService } from '../../portfolio.service';
-import { Skill } from '../../entites';
+import { Skill } from '../../entities';
 import { AppConstants } from '../../common';
 
 @Component({

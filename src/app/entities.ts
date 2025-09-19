@@ -22,5 +22,6 @@ export class Skill{
     score: number;
     logo: string;
     primary: boolean;
+    disabled?: boolean;
 }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkExp, Skill, Projects } from '../../entites';
+import { WorkExp, Skill, Projects } from '../../entities';
 import { PortfolioService } from '../../portfolio.service';
 import { Observable } from 'rxjs';
 import { AppConstants } from '../../common';
